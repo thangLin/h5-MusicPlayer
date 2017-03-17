@@ -1,0 +1,57 @@
+[
+    {
+        "image": "./source/album/童话镇.jpg",
+        "audio": "./source/audio/童话镇.mp3",
+        "song": "童话镇",
+        "rhythm": "暗杠",
+        "lyric": "竹君",
+        "album": "童话镇",
+        "singer":"陈一发儿",
+        "duration": 257,
+        "isLike": false
+    },
+    {
+        "image": "./source/album/一剪梅.jpg",
+        "audio": "./source/audio/一剪梅.mp3",
+        "song": "一剪梅",
+        "rhythm": "陈怡",
+        "lyric": "娃娃",
+        "album": "一剪梅",
+        "singer": "费玉清",
+        "duration": 226,
+        "isLike": false
+    },
+    {
+        "image": "./source/album/映山红.png",
+        "audio": "./source/audio/映山红.mp3",
+        "song": "映山红",
+        "rhythm": "傅庚辰",
+        "lyric": "陆柱国",
+        "album": "百年留声",
+        "singer": "宋祖英",
+        "duration": 240,
+        "isLike": false
+    },
+    {
+        "image": "./source/album/平凡之路.jpg",
+        "audio": "./source/audio/平凡之路.mp3",
+        "song": "平凡之路",
+        "rhythm": "朴树",
+        "lyric": "朴树",'
+        "album": "卡布翻唱集锦",
+        "singer":"周深",
+        "duration":302 ,
+        "isLike": false
+    },
+    {
+        "image": "./source/album/风吹麦浪.jpg",
+        "audio": "./source/audio/风吹麦浪.mp3",
+        "song": "风吹麦浪",
+        "rhythm": "李健",
+        "lyric": "李健",
+        "album": "想念你",
+        "singer": "李健",
+        "duration": 247,
+        "isLike": false
+    }
+]
