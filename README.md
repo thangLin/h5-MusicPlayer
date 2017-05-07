@@ -1,6 +1,6 @@
-# h5-MusicPlayer
-
-一 -- 
+# h5-MusicPlayer 
+           播放时候  稍微等一等（音频加载----不然会报错）
+一 --   
 
 应用技术： 
  1 Html5 -- 
