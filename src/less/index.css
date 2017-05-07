@@ -18,6 +18,8 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .content {
   width: 100%;
@@ -38,8 +40,9 @@ body {
   left: 0px;
   top: 0px;
   bottom: 0px;
+  height: 192px;
   position: absolute;
-  border-radius: 50%;
+  border-radius: 20%;
   overflow: hidden;
 }
 .content .song-img .img-wrap img {
@@ -50,6 +53,7 @@ body {
 }
 .content .song-info {
   width: 100%;
+  height: 126px;
   text-align: center;
   margin-top: 30px;
 }
@@ -102,7 +106,6 @@ body {
   width: 100%;
   height: 100%;
   background: black;
-  transform: translateX(-80%);
 }
 .content .play-area .pro-wrap .pro-bottom .pro-top .slide-point {
   height: 23px;
@@ -120,7 +123,7 @@ body {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: white;
+  background: black;
 }
 .content .play-control {
   display: flex;

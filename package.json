@@ -1,0 +1,16 @@
+{
+  "name": "h5_music_player",
+  "version": "1.0.0",
+  "description": "html5_music_player",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Thanglin",
+  "license": "MIT"
+}
