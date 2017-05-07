@@ -22,23 +22,24 @@
 
 组合对象结构--
 
-顶层   --                                                      （1） btnController
-                                                                    （顶层控件）
-
-第二层 --                            （10）AudioPlayer             （11）timeSpan              （12）likeBtn
-                              （控制音乐的对象、播放时间）          （显示右侧歌曲总时长）         (点击喜欢的点击按钮)
-                            （父级对象的audio属性）                （父级timeSpanObj属性）      （父级likeBtnObj属性）
-
-第三层 --       （101）audio         (101) playBtn      （102）progressBar
-               （new audio）        (点击播放暂停按钮)   （滑动进度条，改变播放状态和播放时间）
-            （父级audio属性）       （父级sonPlay属性）  （父级progressBar属性）
-    （这里命名时都命名为了audio）
-      （  以后得注意这种事。）
+顶层   --   （1） btnController （顶层控件）
 
 
-第四层                                                 （1020）leftTimeSpan               （1021）progressBarDom
-                                                      （左边显示播放时间的span）           （控制进度条--一个原生dom）
-                                                      （父级timeDom属性）                  （父级barDom属性）
+第二层 --  （10）AudioPlayer（控制音乐的对象、播放时间）     （父级对象的audio属性）  
+          （11）timeSpan    （显示右侧歌曲总时长）         （父级timeSpanObj属性）
+          （12）likeBtn     (点击喜欢的点击按钮)           （父级likeBtnObj属性）
+                                                               
+
+第三层 --  （101）audio       （new audio）  （父级audio属性）  （这里和上面都命名audio，以后得注意这种事。）
+           (101) playBtn      (点击播放暂停按钮) （父级sonPlay属性）      
+          （102）progressBar （滑动进度条，改变播放状态和播放时间） （父级progressBar属性）
+                        
+  
+第四层 --（1020）leftTimeSpan  （左边显示播放时间的span）   （父级timeDom属性）
+        （1021）progressBarDom （控制进度条--一个原生dom）  （父级barDom属性）
+                                                                 
+
+（解释：1020 项为 102 项的子组件，102为10子组件， 其它同理）                                                                        
 
 大概流程图如此，我使用面向对象的方式，对项目的整体进行构建，交互、点击事件于一个对象。
 
