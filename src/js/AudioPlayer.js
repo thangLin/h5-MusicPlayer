@@ -19,10 +19,8 @@
                         this.status = 'play';
                       },
       jumpToPlay:function(jumpRate){
-        this.audio.pause();
         this.progressBar['jumpTo'](jumpRate);
         this.audio.currentTime = Math.floor(jumpRate * this.audio.duration);
-        this.audio.play();
         //跳转音频当前播放 帧 （以秒计）
       },//提供接口方法  让controller对象可以调用
       setSource:function(src,durationTime){
