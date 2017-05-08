@@ -58,23 +58,22 @@ getSong('./data/data.json',function(data){
 (function(){
     var width = domPool['pro-wrap'].offsetWidth,
         ofLeft = domPool['pro-wrap'].offsetLeft,
+        touchLeft,
         oStatus,//状态记录--变量
-        oPercent;
+        oPercent;//跳转百分比
     $('.slide-point').eq(0).on('touchstart',function(e){
           oStatus =  btnController['audio']['status'];
           //记录触摸前的 播放状态
-          //自己写的函数当暂停的时候会改变它本身的状态；
-          btnController['audio']['pause']();
     }).on('touchmove',function(e){
-        var touchLeft = e.changedTouches[0].clientX;
+        touchLeft = e.changedTouches[0].clientX;
         oPercent = (touchLeft - ofLeft)/width;
         if(oPercent >= 0 && oPercent <=1){
-             btnController['audio']['jumpToPlay'](oPercent);  
+             btnController['audio']['progressBar']['jumpTo'](oPercent);  
         }
     }).on('touchend',function(e){
+        btnController['audio']['jumpToPlay'](oPercent);
         if(oStatus == 'play'){
             btnController['audio']['play']();
-            oStatus == 'pause'; 
         }
     })
     //将函数  绑定放在一个立即执行函数里   这样使得 全局变量  变少。
@@ -111,7 +110,7 @@ function returnClassName(str){
     }
 }
 
-
+// 实在  不用   再处理index.js  逻辑太简单 咯。
 
 
 
