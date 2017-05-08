@@ -1,12 +1,13 @@
 # h5-MusicPlayer 
-           播放时候  稍微等一等（音频加载----不然会报错）
-一 --   
+         
+一 --   
 
 应用技术： 
  1 Html5 -- 
          媒体- audio 
          动画- requesetAnimationFrame
- 2  图片预加载  
+         canvas
+ 2  图片预加载  
  3 对象池
  4 代理模式
  5 移动端touch事件
